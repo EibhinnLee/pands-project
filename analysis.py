@@ -15,8 +15,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('Iris_dataset.txt')
-
+df.info()
 df.plot(kind = 'scatter', x = 'SL', y = 'SW')
-sns.countplot('Species', data=df)
-plt.show()
 
+sns.countplot('Species', data=df)
+
+ax = df[df.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa')
+df[df.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)
+df[df.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+ax.set_title("scatter")
+
+
+plt.show()
