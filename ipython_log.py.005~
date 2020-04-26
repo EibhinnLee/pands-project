@@ -1,0 +1,14 @@
+# IPython log file
+
+get_ipython().run_line_magic('logstart', '')
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv('Iris_dataset.txt)
+df = pd.read_csv('Iris_dataset.txt')
+df
+import seaborn as sns
+sns.countplot('Species', data=iris)
+sns.countplot('Species', data=Iris_dataset)
+iris['Species'].value_count
+sns.countplot('Species', data=df)
+df['Species'].value_count()

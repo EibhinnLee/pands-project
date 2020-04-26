@@ -1,0 +1,57 @@
+# IPython log file
+
+&logstart
+get_ipython().run_line_magic('logstart', '')
+import pandas as pd
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
+iris = pd.read_csv('Iris_dataset.txt)
+iris = pd.read_csv('Iris_dataset.txt')
+iris
+iris.info()
+iris['Species'] = iris['Species'].astype('category') iris['target'] = pd.Categorical.from_array(iris['Species']).codes iris['target'].value_counts()
+iris['Species'] = iris['Species'].astype('category')                                                          iris['target'] = pd.Categorical.from_array(iris['Species']).codes                                             iris['target'].value_counts()
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SepalLengthCm', y='SepalWidthCm',                                                     color='red', label='setosa') iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SepalLengthCm', y='SepalWidthCm',                                                 color='green', label='versicolor', ax=ax) iris[iris.Species=='Iris-virginica'].plot.scatter(x='SepalLengthCm', y='SepalWidthCm',                                                 color='blue', label='virginica', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',                                                     color='red', label='setosa') iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',                                                 color='green', label='versicolor', ax=ax) iris[iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW',                                                 color='blue', label='virginica', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa') iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax) iris[iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa') iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax) iris[iris.Spec     ...: ies=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+sns.set()
+sns.pair(iris[['SL', 'SW', 'PL', 'PW', 'Species']], hue="Species", diag_kind="kde")
+ax
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa'). iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa'),             iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa'). bx = iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=bx)
+ax = df[df.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',                                                     color='red', label='setosa') df[df.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',                                                 color='green', label='versicolor', ax=ax) df[df.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW',                                                 color='blue', label='virginica', ax=ax)
+ax = df[df.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',                                                     color='red', label='setosa') df[df.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',                                                 color='green', label='versicolor', ax=ax) df[df.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW',                                                 color='blue', label='virginica', ax=ax)
+iris
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa')              iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)  iris[iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+ax
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa')
+ax
+ax = iris[iris.Species=='Iris-setosa'].plt.scatter(x='SL', y='SW', color='red', label='setosa')     ...: iris[iris.Species=='Iris-versicolor'].plt.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)     ...: iris[iris.Species=='Iris-virginica'].plt.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa')iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax) iris[iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa')              iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)  iris[iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa'), iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax), iris[iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax).
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa'), iris[iris.Sp     ...: ecies=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax), iris[iris.Sp     ...: ecies=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW', color='red', label='setosa'), iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax), iris[iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW', color='blue', label='virginica', ax=ax)
+sns.countplot('Species', data=df)
+sns.countplot('Species', data=iris)
+iris.plot(kind = 'scatter', x = 'SL', y = 'SW')
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa')               iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa') iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)
+ww = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa') iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW', color='green', label='versicolor', ax=ax)
+import pandas as pd
+ax
+plt.ax
+ax
+ww
+ax
+ax = df[df.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa')
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa')
+ax = iris[iris.Species=='Iris-setosa'].plot.scatter(x='SepalLengthCm', y='SepalWidthCm',                                                     color='red', label='setosa') iris[iris.Species=='Iris-versicolor'].plot.scatter(x='SepalLengthCm', y='SepalWidthCm',                                                 color='green', label='versicolor', ax=ax) iris[iris.Species=='Iris-virginica'].plot.scatter(x='SepalLengthCm', y='SepalWidthCm',                                                 color='blue', label='virginica', ax=ax) ax.set_title("scatter")
+ipython-input-50-b00e404398ec
+iris['Species'].value_count()
+sns.countplot('Species', data=df) df['Species'].value_count()
+sns.countplot('Species', data=iris)
+exit()

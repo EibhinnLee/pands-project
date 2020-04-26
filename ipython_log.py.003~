@@ -1,0 +1,18 @@
+# IPython log file
+
+get_ipython().run_line_magic('logstart', '')
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+Iris = pd.read_csv('Iris_dataset.txt)
+Iris=pd.read_csv('Iris_dataset.txt)
+Iris =pd.read_csv('Iris_dataset.txt')
+Iris
+ax = Iris[Iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa')
+ax = Iris[Iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',color='green', label='versicolor')
+ax = Iris[Iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa'),Iris[Iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',color='green', label='versicolor')
+ax = df[df.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',     ...:                                                     color='red', label='setosa')     ...: df[df.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',     ...:                                                 color='green', label='versicolor', ax=ax)     ...: df[df.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW',     ...:                                                 color='blue', label='virginica', ax=ax)
+ax = df[df.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',                                                          color='red', label='setosa')      df[df.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',                                                     color='green', label='versicolor', ax=ax)      df[df.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW',                                                      color='blue', label='virginica', ax=ax)
+ax = Iris[Iris.Species=='Iris-setosa'].plot.scatter(x='SL', y='SW',color='red', label='setosa')Iris[Iris.Species=='Iris-versicolor'].plot.scatter(x='SL', y='SW',color='green', label='versicolor', ax=ax) Iris[Iris.Species=='Iris-virginica'].plot.scatter(x='SL', y='SW',color='blue', label='virginica', ax=ax)
+exit()
