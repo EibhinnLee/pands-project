@@ -17,8 +17,14 @@ import matplotlib.pyplot as plt
 # import dataset "Iris Dataset" textfile.
 df = pd.read_csv('Iris_dataset.txt')
 
+
+
 # Info of Dataset showing number of values per each variable.
 df.info()
+
+df['Species'].value_counts()
+
+df.describe()
 
 df.plot(kind = 'scatter', x = 'SL', y = 'SW')
 
@@ -85,12 +91,47 @@ df[df.Species=='Iris-versicolor'].plot.scatter(x='PW', y='SW', color='green', la
 df[df.Species=='Iris-virginica'].plot.scatter(x='PW', y='SW', color='blue', label='virginica', ax=ax)
 ax.set_title("PW v SW")
 
-ax = df[df.Species=='Iris-setosa'].plot.scatter(x='PW', y='PL', color='red', label='setosa')
-df[df.Species=='Iris-versicolor'].plot.scatter(x='PW', y='PL', color='green', label='versicolor', ax=ax)
-df[df.Species=='Iris-virginica'].plot.scatter(x='PW', y='PL', color='blue', label='virginica', ax=ax)
+ax = df[df.Species=='Iris-setosa'].plot.hist(x='PW', color='red', label='setosa')
+df[df.Species=='Iris-versicolor'].plot.hist(x='PW', color='green', label='versicolor', ax=ax)
+df[df.Species=='Iris-virginica'].plot.hist(x='PW', color='blue', label='virginica', ax=ax)
 ax.set_title("PW v PL")
 
+df.hist(edgecolor='black', linewidth=1.2)
+fig=plt.gcf()
+fig.set_size_inches(12,6)
+plt.show()
 
-g = sns.pairplot(df, hue="Species", palette="husl")
+plt.figure(figsize = (10, 7)) 
+x = df.PW
+  
+plt.hist(x, bins = 50, color = "green", edgecolor = 'black', linewidth = 1.5) 
+plt.title("PW") 
+plt.xlabel("PW") 
+plt.ylabel("Count") 
+
+plt.figure(figsize = (10, 7)) 
+y = df.SW
+  
+plt.hist(y, bins = 50, color = "red", edgecolor = 'black', linewidth = 1.5) 
+plt.title("SW") 
+plt.xlabel("SW") 
+plt.ylabel("Count") 
+
+plt.figure(figsize = (10, 7)) 
+y = df.PL
+  
+plt.hist(y, bins = 50, color = "orange", edgecolor = 'black', linewidth = 1.5) 
+plt.title("PL") 
+plt.xlabel("PL") 
+plt.ylabel("Count")
+
+plt.figure(figsize = (10, 7)) 
+y = df.SL
+  
+plt.hist(y, bins = 50, color = "BLUE", edgecolor = 'black', linewidth = 1.5) 
+plt.title("SL") 
+plt.xlabel("SL") 
+plt.ylabel("Count")
 
 plt.show()
+
